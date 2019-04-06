@@ -1,5 +1,9 @@
+#commercialised
+embed Cryto into forked Scratch, reward either author or reader.读书币，Player可以回馈作者或推广者
+
 # Learning project 0
 # Revised proj1
+
 
 https://github.com/LLK/scratch-gui
 and eth-scratch to publish Digging to China to Github
