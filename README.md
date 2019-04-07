@@ -1,4 +1,8 @@
 #commercialised
+
+儿童掌握某个弱密码/backup code，代理网关掌握私钥，认证弱密码后发送真正交易 等价于 低龄用邮件界面中心化交易所. Is this 
+https://github.com/opencap/protocol
+
 embed Cryto into forked Scratch, reward either author or reader.读书币，Player可以回馈作者或推广者
 
 # Learning project 0
