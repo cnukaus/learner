@@ -7,6 +7,8 @@ KNC side chain Monopoly game
 
 embed Cryto into forked Scratch, reward either author or reader.读书币，Player可以回馈作者或推广者
 
+提过一个爬公众号repo Issue(), 电脑微信浏览器是过时的Chrome版本
+
 # Learning project 0
 # Revised proj1
 
