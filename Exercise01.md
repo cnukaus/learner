@@ -24,3 +24,20 @@ try 1 of the tools you just installed if you haven't used it, write a short comm
 
 search for Gartner Quadrant of Analytical Tools, try a new tool and submit comment to github.
 (You don't have to do all three things above)
+
+###
+
+Commit help 
+
+User Browser to fork this repo, then type the commands below:
+
+git clone https://github.com/你的用户名/learner
+    (add your contribution, NOT a command!)
+git remote add upstream https://github.com/cnukaus/learner.git
+git fetch upstream
+git checkout master
+git merge upstream/master
+git add --all
+git commit
+git push
+ 
