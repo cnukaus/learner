@@ -20,7 +20,7 @@ Find 1 topic from Reference/Further Readings, then spend ~ 30 minutes to summari
 
 try 1 of the tools you just installed if you haven't used it, write a short comment and submit to github
 
-### Alternative, 
+### or, 
 
 search for Gartner Quadrant of Analytical Tools, try a new tool and submit comment to github.
 (You don't have to do all three things above)
