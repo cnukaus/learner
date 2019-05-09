@@ -9,7 +9,7 @@
 
 [Jupyter notebook](https://jupyter.org/install)
 
-[MYSQL](https://dev.mysql.com/downloads/)  IF you have Microsoft SQL, Oracle or POSTGRES it's fine.
+[MYSQL](https://dev.mysql.com/downloads/)  IF you don't have Microsoft SQL, Oracle or POSTGRES.
 
 
 ### Task
