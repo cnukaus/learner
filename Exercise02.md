@@ -1,12 +1,21 @@
-### 预习- 3 min read https://www.dimodelo.com/subscribers/Data_Warehouse_Bus_Matrix.zip
-### 5 min product evaluation: https://datastudio.google.com
+### Pre-reading
+
+- 3 min read https://www.dimodelo.com/subscribers/Data_Warehouse_Bus_Matrix.zip
+- 5 min product evaluation: https://datastudio.google.com
 
 
-### 作业- Do data preparation (same methods as we did in Lecture 02) in a new tool such as 
+### Homework
+
+Do data preparation (same methods as we did in Lecture 02) in a new tool such as 
+
 ..* Google Data Studio
+
 ..* R
+
 ..* Spark
+
 ..* Tableau (note it has a separate data transform tool)
+
 ..* Knime or WEKA
 
 ### then save to Exercise02 folder and commit, pull request
