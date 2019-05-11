@@ -41,7 +41,7 @@ git add --all
 git commit
 git push
  
-#### lecture 16 sources
+#### DE lecture 13 sources
 https://docs.microsoft.com/bs-latn-ba/azure/architecture/data-guide/big-data/batch-processing?view=azurermps-6.12.0 orchestrating
 
 https://databricks.com/blog/2017/02/23/working-complex-data-formats-structured-streaming-apache-spark-2-1.html semi-structured data
