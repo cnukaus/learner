@@ -22,4 +22,4 @@
 8. Replacing Missing and Empty Values
 让大家正确认识缺失的数据及如何填充，以便于modeling
 9. Series Variables
-序列化处理的难点。
+序列型数据处理的难点。
