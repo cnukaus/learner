@@ -1,3 +1,4 @@
+### 预习- 3 min read https://www.dimodelo.com/subscribers/Data_Warehouse_Bus_Matrix.zip
 ### Reference
 
 [翻转课堂的可汗学院](https://book.douban.com/subject/25886309/)
