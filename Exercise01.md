@@ -3,7 +3,7 @@
 
 ### Download /configure these software
 
-[Alteryx](https://www.alteryx.com/resources/product-support/download-alteryx)
+[Alteryx](http://downloads.alteryx.com/Alteryx2019.1.4.57073/AlteryxDownloadManager2019.1.4.57073_NonAdmin_x64.exe)
 
 [Power BI](https://www.microsoft.com/en-us/download/details.aspx?id=45331)
 
