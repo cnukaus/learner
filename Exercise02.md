@@ -18,7 +18,7 @@ Do data preparation (same methods as we did in Lecture 02) in a new tool such as
 
 ..* Knime or WEKA
 
-then save to Exercise02 folder and commit, pull request
+Then save to Exercise02 folder and commit, pull request
 
 ### Bonus 作业
 
@@ -28,6 +28,7 @@ create a Slack or Discord bot and push your Homework results to a channel
 
 
 [翻转课堂的可汗学院](https://book.douban.com/subject/25886309/)
+
 [CRISP-DM方法论再认识](https://zhuanlan.zhihu.com/p/32014381)
 
 
