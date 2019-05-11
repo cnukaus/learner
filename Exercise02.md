@@ -1,4 +1,18 @@
 ### 预习- 3 min read https://www.dimodelo.com/subscribers/Data_Warehouse_Bus_Matrix.zip
+### 5 min product evaluation: https://datastudio.google.com
+
+
+### 作业- Do data preparation (same methods as we did in Lecture 02) in a new tool such as 
+..* Google Data Studio
+..* R
+..* Spark
+..* Tableau (note it has a separate data transform tool)
+..* Knime or WEKA
+
+### then save to Exercise02 folder and commit, pull request
+
+### Bonus 作业create a Slack or Discord bot and push your Homework results to a channel
+
 ### Reference
 
 [翻转课堂的可汗学院](https://book.douban.com/subject/25886309/)
