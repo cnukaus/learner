@@ -6,19 +6,24 @@
 
 ### Homework
 
-Do data preparation (same methods as we did in Lecture 02) in a new tool such as 
+Do data preparation (same methods as we did in Lecture 02), which will
 
-..* Google Data Studio
+..* fill all blank values (as our Python notebook)
+..* Create a metadata description table (as ourr df_metadata)
+..* Obtain results for each continent (note this definition is missing, you have to define it in your own reference table), so we have results like:
+Each decade, each continent, the average total injures
+..* a stacked bar chart, to show monthly count of injuries by each maker (use color legend to tell a make)
 
-..* R
 
-..* Spark
+in a new tool such as 
 
-..* Tableau (note it has a separate data transform tool)
+..* Google Data Studio, Power BI or Tableau (note it has a separate data transform tool)
 
-..* Knime or WEKA
+..* R, Spark
 
-Then save to Exercise02 folder and commit, pull request
+..* Alteryx, Knime, Orange or WEKA
+
+Then save to local Exercise02 folder and commit, pull request
 
 ### Bonus 作业
 
