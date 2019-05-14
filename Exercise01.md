@@ -32,14 +32,22 @@ Commit help
 User Browser to fork this repo, then type the commands below:
 
 git clone https://github.com/你的用户名/learner
+
     (add your contribution, NOT a command!)
 git remote add upstream https://github.com/cnukaus/learner.git
+
 git fetch upstream
+
 git checkout master
+
 git merge upstream/master
+
 git add --all
+
 git commit
+
 git push
+ 
  
 #### DE lecture 13 sources
 https://docs.microsoft.com/bs-latn-ba/azure/architecture/data-guide/big-data/batch-processing?view=azurermps-6.12.0 orchestrating
