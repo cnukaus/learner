@@ -14,7 +14,7 @@ c. Create relationship to this [REFERENCE TABLE](https://developers.google.com/p
 d. Compare Latitude from main file, against latitude from new reference file, in a visual way, to find which country had wrong data.
 e. Use Tableau formula to see if you can replace the wrong latitude (southen hemisphere countries should be negative value)
 
-### You can do these in Power BI,<font color="red>SuperSet (FREE TABLEAU ALTERNATIVE)</font> ,Metabase, Python, Data Studio (IBM or Google+ Bigquery), or your SQL IDE if you can
+### You can do these in Power BI,<font color=red>SuperSet (FREE TABLEAU ALTERNATIVE)</font> ,Metabase, Python, Data Studio (IBM or Google+ Bigquery), or your SQL IDE if you can
 
 
 
