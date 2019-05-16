@@ -10,11 +10,13 @@ https://wenku.baidu.com/view/aadedc6eaf1ffc4ffe47ace9.html
 ### Task 2: Using Tableau public to create a map on [Exercise file](https://public.tableau.com/profile/sheeporange#!/vizhome/TotalInjuriesEachMonth/InjuriesofAirportAccidentsReport) then
 a. change map layer to actual landscape
 b. Create a pie (divide Make by color) or bar chart, or hotmap on this map, to show (by country) the number of incidents
-c. Create relationship to this [REFERENCE TABLE](https://developers.google.com/public-data/docs/canonical/countries_csv) (希望这次交代清楚了:)）
+c. Create relationship to this new data source [REFERENCE TABLE](https://developers.google.com/public-data/docs/canonical/countries_csv) (希望这次交代清楚了:)）
 d. Compare Latitude from main file, against latitude from new reference file, in a visual way, to find which country had wrong data.
 e. Use Tableau formula to see if you can replace the wrong latitude (southen hemisphere countries should be negative value)
+f. Add a data table beside bar chart, format it to alternate color (line 1 background grey, line 2 white, line 3 grey ...)
+g. stop filtering dashboard from a sheet, or setup 1 sheet to filter the dashboard
 
-### You can do these in Power BI,<font color=red>SuperSet (FREE TABLEAU ALTERNATIVE)</font> ,Metabase, Python, Data Studio (IBM or Google+ Bigquery), or your SQL IDE if you can
+You can do these in Power BI,<font color="red">SuperSet (FREE TABLEAU ALTERNATIVE)</font> ,Metabase, Python, Data Studio (IBM or Google+ Bigquery), or your SQL IDE if you can!
 
 
 
