@@ -47,6 +47,7 @@ git add --all
 git commit
 
 git push
+(如果upstream也是自己的目录？那么可能要先git pull才能push, otherwise stash)
 
 ## Simplest Markdown formatting syntax
 No auto line break,
