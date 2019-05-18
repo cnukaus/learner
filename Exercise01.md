@@ -53,7 +53,7 @@ No auto line break,
 has to have a new blank line,
 
 or back\
-slash to get a line break
+slash \ at the end of a lineto get a line break
 
 URL is  square brackets for [text] followed by(http://url) like [git](http://github.com)
 
