@@ -47,7 +47,17 @@ git add --all
 git commit
 
 git push
- 
+
+## Simplest Markdown formatting syntax
+No auto line break,
+has to have a new blank line,
+
+or back\
+slash \ at the end of a lineto get a line break
+
+URL is  square brackets for [text] followed by(http://url) like [git](http://github.com)
+
+### 3 sharps means header 3 format
  
 #### DE lecture 13 sources
 https://docs.microsoft.com/bs-latn-ba/azure/architecture/data-guide/big-data/batch-processing?view=azurermps-6.12.0 orchestrating
