@@ -4,8 +4,9 @@ to tell [西瓜甜度](https://github.com/tz28/machine-learning/blob/master/%E8%
 or use our exercise Flight Incident data on a different model (Random Forest, logistic regression, Neural Network)\
 or Time series to tell some trend from [BITDB](https://bitdb.network/)
 
-### 2.Use your language, to tell finance managers what is RFM model, what is time series model, what is association rule, what is KNN method.
-ANd RFM's different to Clustering(K-means), KNN's difference to Association rules or Clustering
+### 2.Use your language, to tell finance managers\
+what is RFM model, what is time series model, what is association rule, what is KNN method.
+And RFM's different to Clustering(K-means), KNN's difference to Association rules or Clustering
 
 ### 3. Choose 1 item:
 A. tell if 林彪's last flight is in our full recordset (18MB), if not, add it and also contribute to the original Kaggle dataset
