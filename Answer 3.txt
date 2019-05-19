@@ -1,0 +1,22 @@
+Answer1:
+Tableau Viewer has security setting from data leaking
+Prep is a separate product for data processing
+
+Answer 3
+
+Use regular express (or Python, SQL, Alteryx) to split the string below: “N/A,Alice Springs,Bathurst,Melbourne Aerodrome,Perth,Caines,Sydney,Bulli Tops,Brisbane,Sydney NSW,Halls Creek Aeodrome,Brisbane,Moree Aerodrome,Broken Hill,Latrobe Valley,Sydney, Australia,Melbourne Airport,Wagga-wagga,Melbourne Airport,Bathurst,Jundee ...“
+
+Answer: if has no double quotes:
+[^,]+
+Test at https://regex101.com/r/hzIWDH/1
+
+方括号"["内是需要匹配的字符，花括号"{"内是指定匹配字符的数量。
+圆括号“(“ 则是用来分组的。
+
+
+
+(If has double quotes):
+\"(.+?)\"
+
+
+If you really don't can't do it, or want to do more, use SQL over (partition by) to find : for each country, the airport with longest string length, 1 record each country ONLY.
