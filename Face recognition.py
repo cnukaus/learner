@@ -8,7 +8,7 @@ import os
 def list_files1(directory, extension):
     return (f for f in listdir(directory) if f.endswith('.' + extension))
 
-dir="C:\\temp\\photo" #"L:\\MarketPlanning\\BI\\Xueyuan\\Crawler\\Photos"
+dir="C:\\temp\\photo"
 files=list_files1(dir,"jpg")
 for file in files:
 
