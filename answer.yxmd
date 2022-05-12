@@ -1,0 +1,621 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.1">
+  <Nodes>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="354" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Make" order="Ascending" />
+            <Field field="Model" order="Ascending" />
+            <Field field="Count" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Make - Ascending
+Model - Ascending
+Count - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="258" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Make" action="GroupBy" rename="Make" />
+            <SummarizeField field="Model" action="GroupBy" rename="Model" />
+            <SummarizeField field="Engine.Type" action="GroupBy" rename="Engine.Type" />
+            <SummarizeField field="Engine.Type" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="450" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False">
+            <Field name="Make" />
+            <Field name="Model" />
+          </GroupFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="546" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Make" />
+            <Field field="Model" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Make" />
+            <Field field="Model" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Make" selected="False" input="Left_" />
+                <SelectField field="Left_Model" selected="False" input="Left_" />
+                <SelectField field="Left_Count" selected="False" input="Left_" />
+                <SelectField field="Right_Make" selected="True" rename="Right_Make" input="Right_" />
+                <SelectField field="Right_Model" selected="True" rename="Right_Model" input="Right_" />
+                <SelectField field="Right_Engine.Type" selected="True" rename="Right_Engine.Type" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="642" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Engine.Type] != [Right_Engine.Type]</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>!=</Operator>
+            <Field>Engine.Type</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-05-11 20:40:44</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-05-11 20:40:44</StartDate>
+              <EndDate>2019-05-11 20:40:44</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Engine.Type] != [Right_Engine.Type]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="738" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\ADMINI~1\AppData\Local\Temp\Engine_40376_875e15a59eed4d1fb29022d1735d200c_\Engine_16844_31aebc47022b4e0f9081ac4e756c643e_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="282" width="312" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Step 2: filter "Unknown" from mode value</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="306" width="312" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Step 3: Do a partition by here: Latest accident of each Model</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="258" width="312" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Step 1: use Mode of each M/Model to arbitrate Engine Type</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="330" width="312" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Step 4: Top incident count model each country; Top country of each model; Adjust the weight by population</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="426" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>
+          </Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>
+          </RootName>
+          <Delimeters value="," />
+          <NumFields value="555" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="258" y="414" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Macro
+(Directory+)Dynamic Input
+Summarize(with concatenation)
+MultiRow
+TexttoColumn
+Regex
+Cleanse
+Transpose
+Spatial</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="426" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field />
+          <RegExExpression value="" />
+          <CaseInsensitve value="True" />
+          <Method>Replace</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName />
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex />
+          <Match>
+            <Field />
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Replace:
+
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="798" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Total.Fatal.Injuries]+[Total.Serious.Injuries]+[Total.Minor.Injuries]" field="Total_injure" size="4" type="Int32" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="2">
+          <Name />
+          <DefaultAnnotationText>Total_injure = [Total.Fatal.Injuries]+[Total.Serious.Injuries]+[Total.Minor.Inju...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="162" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Event.Id" selected="True" />
+            <Field field="Investigation.Type" selected="True" />
+            <Field field="Accident.Number" selected="True" />
+            <Field field="Event.Date" selected="True" />
+            <Field field="Location" selected="True" />
+            <Field field="Country" selected="True" />
+            <Field field="Latitude" selected="True" />
+            <Field field="Longitude" selected="True" />
+            <Field field="Airport.Code" selected="True" />
+            <Field field="Airport.Name" selected="True" />
+            <Field field="Injury.Severity" selected="True" />
+            <Field field="Aircraft.Damage" selected="True" />
+            <Field field="Aircraft.Category" selected="True" />
+            <Field field="Registration.Number" selected="True" />
+            <Field field="Make" selected="True" />
+            <Field field="Model" selected="True" />
+            <Field field="Amateur.Built" selected="True" />
+            <Field field="Number.of.Engines" selected="True" />
+            <Field field="Engine.Type" selected="True" />
+            <Field field="FAR.Description" selected="True" />
+            <Field field="Schedule" selected="True" />
+            <Field field="Purpose.of.Flight" selected="True" />
+            <Field field="Air.Carrier" selected="True" />
+            <Field field="Total.Fatal.Injuries" selected="True" />
+            <Field field="Total.Serious.Injuries" selected="True" />
+            <Field field="Total.Minor.Injuries" selected="True" />
+            <Field field="Total.Uninjured" selected="True" />
+            <Field field="Weather.Condition" selected="True" />
+            <Field field="Broad.Phase.of.Flight" selected="True" />
+            <Field field="Report.Status" selected="True" />
+            <Field field="Publication.Date" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Event.Id" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Investigation.Type" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Accident.Number" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Event.Date" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Location" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Country" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Latitude" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Longitude" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Airport.Code" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Airport.Name" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Injury.Severity" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Aircraft.Damage" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Aircraft.Category" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Registration.Number" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Make" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Model" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Amateur.Built" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Number.of.Engines" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Engine.Type" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="FAR.Description" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Schedule" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Purpose.of.Flight" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Air.Carrier" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Total.Fatal.Injuries" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Total.Serious.Injuries" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Total.Minor.Injuries" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Total.Uninjured" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Weather.Condition" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Broad.Phase.of.Flight" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Report.Status" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Publication.Date" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings>
+        <Position x="702" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"Engine.Type","Event.Id","Investigation.Type","Accident.Number","Event.Date","Location","Country","Latitude","Longitude","Airport.Code","Airport.Name","Injury.Severity","Aircraft.Damage","Aircraft.Category","Registration.Number","Right_Make","Right_Model","Amateur.Built","Number.of.Engines","Right_Engine.Type","FAR.Description","Schedule","Purpose.of.Flight","Air.Carrier","Total.Fatal.Injuries","Total.Serious.Injuries","Total.Minor.Injuries","Total.Uninjured","Weather.Condition","Broad.Phase.of.Flight","Report.Status","Publication.Date"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="798" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Total.Fatal.Injuries]+[Total.Serious.Injuries]+[Total.Minor.Injuries]" field="Total_injure" size="4" type="Int32" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="2">
+          <Name />
+          <DefaultAnnotationText>Total_injure = [Total.Fatal.Injuries]+[Total.Serious.Injuries]+[Total.Minor.Inju...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>L2-AviationData.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Event.Id" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Investigation.Type" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Accident.Number" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Event.Date" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Location" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Country" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Latitude" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Longitude" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Airport.Code" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Airport.Name" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Injury.Severity" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Aircraft.Damage" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Aircraft.Category" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Registration.Number" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Make" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Model" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Amateur.Built" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Number.of.Engines" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Engine.Type" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="FAR.Description" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Schedule" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Purpose.of.Flight" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Air.Carrier" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Total.Fatal.Injuries" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Total.Serious.Injuries" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Total.Minor.Injuries" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Total.Uninjured" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Weather.Condition" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Broad.Phase.of.Flight" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Report.Status" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+            <Field name="Publication.Date" size="254" source="File: C:\PersonalProj\匠人培训\learner\lecture02\L2-AviationData.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="9" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="25" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="True" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output26" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>answer</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
