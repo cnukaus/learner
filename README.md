@@ -10,3 +10,8 @@ If you use partial of a file, I appreciate it if you can link back to https://gi
 
 Links to external resources to watch:
 [DataDaft](https://twitter.com/DataDaft) (Aug19)
+
+updates 2024:
+adding a few things:
+dbt (data build tool)
+google SQL.
