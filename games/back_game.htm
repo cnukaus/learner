@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Quest: Backup & Restore Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fdf6e3;
+      color: #333;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .step {
+      margin-bottom: 2rem;
+    }
+    .mnemonic {
+      background: #eee;
+      padding: 1rem;
+      border-radius: 8px;
+      font-family: monospace;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+    .mnemonic span {
+      background: #ddd;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+    }
+    button {
+      background: #007bff;
+      color: white;
+      padding: 0.6rem 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>🔐 Key Quest</h1>
+  <h2>Backup & Restore Practice Game</h2>
+
+  <div class="step" id="step1">
+    <h3>Step 1: Your Digital Destiny</h3>
+    <p>You enter the Shrine of Memory and are granted a sacred phrase. Back it up somewhere safe!</p>
+    <div class="mnemonic" id="mnemonicWords"></div>
+    <button onclick="nextStep()">I've Backed It Up</button>
+  </div>
+
+  <div class="step hidden" id="step2">
+    <h3>Step 2: Recovery Simulation</h3>
+    <p>Imagine your phone is lost! Retrieve your sacred phrase and type it here to restore your digital self.</p>
+    <textarea id="recoveryInput" rows="4" style="width: 100%; padding: 0.5rem;"></textarea><br><br>
+    <button onclick="checkRecovery()">Check Recovery</button>
+  </div>
+
+  <div class="step hidden" id="step3">
+    <h3>✅ Congratulations!</h3>
+    <p>You have successfully completed the Key Quest! You're now a <strong>Key Guardian</strong>.</p>
+    <p>🎖️ Share this with friends to help them secure their wallets!</p>
+  </div>
+</div>
+
+<script>
+  const sampleWords = [
+    "sun", "mountain", "river", "torch", "apple", "spirit",
+    "eagle", "sand", "mirror", "flame", "code", "storm"
+  ];
+
+  document.getElementById("mnemonicWords").innerHTML = sampleWords.map(word => `<span>${word}</span>`).join(' ');
+
+  function nextStep() {
+    document.getElementById("step1").classList.add("hidden");
+    document.getElementById("step2").classList.remove("hidden");
+  }
+
+  function checkRecovery() {
+    const input = document.getElementById("recoveryInput").value.trim().toLowerCase();
+    const original = sampleWords.join(' ');
+    if (input === original) {
+      document.getElementById("step2").classList.add("hidden");
+      document.getElementById("step3").classList.remove("hidden");
+    } else {
+      alert("❌ Hmm, that doesn't match. Check your backup and try again!");
+    }
+  }
+</script>
+</body>
+</html>
